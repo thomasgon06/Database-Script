@@ -7,7 +7,7 @@ from bson.json_util import dumps
 import matplotlib.pyplot as plt
 
 
-connection_string = "mongodb://localhost:27017/"
+connection_string = "mongodb://localhost:27017/" #replace with "mongodb://ip_of_database:27017" if database is not on local machine
 client = MongoClient(connection_string)
 current_db = client.SensorData
 collection = current_db.SensorInfo
